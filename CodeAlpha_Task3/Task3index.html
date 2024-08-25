@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="Task3styles.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <ul class="nav">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#" id="login-button">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard-container">
+        <section class="card-container">
+            <div class="card" data-card-id="1">
+                <img src="fb.jpg" alt="Card Image">
+                <h3>Facebook</h3>
+                <p>123 followers, 456 likes, 789 comments</p>
+                <button class="btn">View Insights</button>
+            </div>
+            <div class="card" data-card-id="2">
+                <img src="twitter.jpg" alt="Card Image">
+                <h3>Twitter</h3>
+                <p>456 followers, 789 likes, 123 comments</p>
+                <button class="btn">View Insights</button>
+            </div>
+            <div class="card" data-card-id="3">
+                <img src="insta.jpg" alt="Card Image">
+                <h3>Instagram</h3>
+                <p>789 followers, 123 likes, 456 comments</p>
+                <button class="btn">View Insights</button>
+            </div>
+        </section>
+
+        <section class="recent-articles-container">
+            <h2>Recent Articles</h2>
+            <ul>
+                <li data-article-id="1">
+                    <img src="https://via.placeholder.com/50x50" alt="Article Image">
+                    <h3>Article 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li data-article-id="2">
+                    <img src="https://via.placeholder.com/50x50" alt="Article Image">
+                    <h3>Article 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li data-article-id="3">
+                    <img src="https://via.placeholder.com/50x50" alt="Article Image">
+                    <h3>Article 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form>
+            <button id="login-close-button">Close</button>
+        </div>
+    </div>
+
+    <div class="modal" id="connect-accounts-modal">
+        <div class="modal-content">
+            <h2>Connect Accounts</h2>
+            <form id="connect-accounts-form">
+                <select id="account-type">
+                    <option value="Facebook">Facebook</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Instagram">Instagram</option>
+                </select>
+                <input type="text" id="account-username" placeholder="Account Username">
+                <button type="submit">Connect</button>
+            </form>
+            <button id="connect-accounts-close-button">Close</button>
+        </div>
+    </div>
+
+    <script src="Task3javascript.js"></script>
+</body>
+</html>
